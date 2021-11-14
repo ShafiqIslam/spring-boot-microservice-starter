@@ -3,15 +3,13 @@ package xyz.microservicestarter.moviecatalogservice;
 public class Movie {
     private String name;
     private int year;
-    private int rating;
 
     public Movie() {
     }
 
-    public Movie(String name, int year, int rating) {
+    public Movie(String name, int year) {
         this.name = name;
         this.year = year;
-        this.rating = rating;
     }
 
     public String getName() {
@@ -28,13 +26,5 @@ public class Movie {
 
     public void setYear(int year) {
         this.year = year;
-    }
-
-    public int getRating() {
-        return rating;
-    }
-
-    public void setRating(int rating) {
-        this.rating = rating;
     }
 }
